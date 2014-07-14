@@ -1,4 +1,4 @@
-Ubuntu 14.04 TLS Docker image
+Ubuntu 14.04 LTS Docker image
 =============================
 
 
