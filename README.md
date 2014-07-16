@@ -52,7 +52,33 @@ You can run another process. Here, I ask to the docker vm to calculate the first
     sys	0m0.014s
     $
     
-You can build awesome VM based on this image
+You can extend this image for testing service. For example, test `nginx` web server:
     
+    $ docker run --rm -t -i sylvainlasnier/ubuntu /bin/bash
+    root@e183b281175e:/# apt-get install nginx -y
+    ...
+    root@e183b281175e:/# service nginx start
+    * Starting nginx nginx                                                        [ OK ] 
+    root@e183b281175e:/#
+    
+Test it from another terminal:
+  
+    sylvain@sla-vpcz21:~$ curl -I `docker inspect e183b281175e| grep IPAddress| cut -d\" -f4`
+    HTTP/1.1 200 OK
+    Server: nginx/1.4.6 (Ubuntu)
+    Date: Wed, 16 Jul 2014 14:54:17 GMT
+    Content-Type: text/html
+    Content-Length: 612
+    Last-Modified: Wed, 16 Jul 2014 14:53:20 GMT
+    Connection: keep-alive
+    ETag: "53c691e0-264"
+    Accept-Ranges: bytes
+    
+    sylvain@sla-vpcz21:~$
+    
+Nice!
+    
+And last but not least, you can build your own awesome VM based on this image.
+
 
 Have fun and try my other images ^^
