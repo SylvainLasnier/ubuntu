@@ -6,7 +6,7 @@ Description
 
 This image is the root of all my other docker images. It is small and basic.
 
-It includes fresh installation of Ubuntu 14.04 LTS distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, curl to use webservices and supervisor to run easily more process in Docker VM.  
+It includes fresh installation of Ubuntu 14.04 LTS distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
 
 So, this image respects pragmatic simple vision of Docker image.  
 If you are looking for a complete VM, just use LXC.  
