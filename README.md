@@ -4,8 +4,8 @@ Ubuntu 14.04 LTS Docker image
 Description
 -----------
 
-This image is the base of all my other docker images.  
-It is included Ubuntu 14.04 LTS fresh distribution, universe apt packages, and basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more than one process in Docker VM.  
+This image is the root of all my other docker images.  
+It is included basic and fresh installation of Ubuntu 14.04 LTS distribution, with universe apt packages and basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
 
 
 Usage
@@ -47,6 +47,8 @@ You can run another process. Here, I ask to the docker vm to calculate the first
     user	0m0.362s
     sys	0m0.014s
     $
+    
+You can build awesome VM based on this image
     
 
 Have fun and try my other images ^^
