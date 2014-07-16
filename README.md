@@ -5,7 +5,7 @@ Description
 -----------
 
 This image is the base of all my other docker images.  
-It is include Ubuntu 14.04 LTS fresh distribution and basic common packages: vim-tiny editor, bash-completion, curl and supervisor to run more than one process in Docker VM.  
+It is included Ubuntu 14.04 LTS fresh distribution, universe apt packages, and basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more than one process in Docker VM.  
 
 
 Usage
@@ -21,9 +21,10 @@ You can run shell like this:
     Release:	14.04
     Codename:	trusty
     root@65b9aa83467b:/# exit
+    exit
     $
 
-You can run another process. Here, I calculate first 1000 number of pi in the Ubuntu docker VM:
+You can run another process. Here, I ask to the docker vm to calculate the first thousand pi decimals:
 
     $ time docker run --rm sylvainlasnier/ubuntu echo "scale=1000; 4*a(1)" | bc -l 
     3.141592653589793238462643383279502884197169399375105820974944592307\
