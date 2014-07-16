@@ -5,7 +5,7 @@ Description
 -----------
 
 This image is the root of all my other docker images.  
-It is included basic and fresh installation of Ubuntu 14.04 LTS distribution, with universe apt packages and basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
+It is included basic and fresh installation of Ubuntu 14.04 LTS distribution, with english language, universe apt packages and basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
 
 
 Usage
