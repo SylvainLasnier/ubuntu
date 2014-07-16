@@ -4,11 +4,13 @@ Ubuntu 14.04 LTS Docker image
 Description
 -----------
 
-This image is the root of all my other docker images.  
-It is small and basic:    
-fresh installation of Ubuntu 14.04 LTS distribution, english language, universe apt packages and basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
+This image is the root of all my other docker images. It is small and basic.
 
-So, it respects pragmatic simple vision of Docker image. If you are looking for a complete VM, look LXC. It is an excellent product to get fast full VM. 
+It includes fresh installation of Ubuntu 14.04 LTS distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, curl to use webservices and supervisor to run easily more process in Docker VM.  
+
+So, this image respects pragmatic simple vision of Docker image.  
+If you are looking for a complete VM, just use LXC. It is an awesome product to get fast full VM where Docker is awesome to get only one service.
+
 
 Usage
 -----
@@ -23,7 +25,6 @@ You can run shell like this:
     Release:	14.04
     Codename:	trusty
     root@65b9aa83467b:/# exit
-    exit
     $
 
 You can run another process. Here, I ask to the docker vm to calculate the first thousand pi decimals:
