@@ -74,10 +74,9 @@ Test it from another terminal:
     ETag: "53c691e0-264"
     Accept-Ranges: bytes
     
-    sylvain@sla-vpcz21:~$
+    sylvain@sla-vpcz21:~$ This is Amazing!
     
-Nice!
-    
+
 And last but not least, you can build your own awesome VM based on this image.
 
 
