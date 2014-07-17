@@ -63,7 +63,7 @@ You can extend this image for testing service. For example, test `nginx` web ser
     
 Test it from another terminal:
   
-    sylvain@sla-vpcz21:~$ curl -I `docker inspect e183b281175e| grep IPAddress| cut -d\" -f4`
+    sylvain@sla-vpcz21:~$ curl -I `docker inspect -f '{{.NetworkSettings.IPAddress}}' e183b281175e`
     HTTP/1.1 200 OK
     Server: nginx/1.4.6 (Ubuntu)
     Date: Wed, 16 Jul 2014 14:54:17 GMT
