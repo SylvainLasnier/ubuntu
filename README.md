@@ -4,13 +4,13 @@ Ubuntu 14.04 LTS Docker image
 Description
 -----------
 
-This is the Original Ubuntu 14.04 LTS Root of all my other docker images. It is small and basic.
+This is the Original Ubuntu 14.04 LTS root docker images. It is small and basic.
 
 It includes fresh installation of Ubuntu 14.04 LTS distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
 
 So, this image respects pragmatic simple vision of Docker.  
 If you are looking for a complete VM, just use LXC.  
-LXC is an amazing product to get fast full VM where Docker is amazing to get only one service by VM.
+**LXC** is an amazing product to get fast **full VM** where **Docker** is amazing to get only **one service by VM**.
 
 
 Usage
