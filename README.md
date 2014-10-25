@@ -1,12 +1,12 @@
-Ubuntu 14.04 LTS Docker image
+Ubuntu 14.10 Docker image
 =============================
 
 Description
 -----------
 
-This is the Original Ubuntu 14.04 LTS root docker images. It is small and basic.
+This is the Original Ubuntu 14.10 root docker images. It is small and basic.
 
-It includes fresh installation of Ubuntu 14.04 LTS distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
+It includes fresh installation of Ubuntu 14.10 distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
 
 So, this image respects pragmatic simple vision of Docker.  
 If you are looking for a complete VM, just use LXC.  
@@ -22,9 +22,9 @@ You can run shell like this:
     root@65b9aa83467b:/# lsb_release -a
     No LSB modules are available.
     Distributor ID:	Ubuntu
-    Description:	Ubuntu 14.04 LTS
-    Release:	14.04
-    Codename:	trusty
+    Description:	Ubuntu 14.10
+    Release:	14.10
+    Codename:	utopic
     root@65b9aa83467b:/# exit
     $
 
@@ -65,13 +65,13 @@ Test it from another terminal:
   
     sylvain@sla-vpcz21:~$ curl -I `docker inspect -f '{{.NetworkSettings.IPAddress}}' e183b281175e`
     HTTP/1.1 200 OK
-    Server: nginx/1.4.6 (Ubuntu)
-    Date: Wed, 16 Jul 2014 14:54:17 GMT
+    Server: nginx/1.6.2 (Ubuntu)
+    Date: Sat, 25 Oct 2014 13:47:18 GMT
     Content-Type: text/html
     Content-Length: 612
-    Last-Modified: Wed, 16 Jul 2014 14:53:20 GMT
+    Last-Modified: Tue, 16 Sep 2014 12:23:19 GMT
     Connection: keep-alive
-    ETag: "53c691e0-264"
+    ETag: "54182bb7-264"
     Accept-Ranges: bytes
     
     sylvain@sla-vpcz21:~$ This is Amazing!
