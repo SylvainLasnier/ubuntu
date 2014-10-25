@@ -80,4 +80,4 @@ Test it from another terminal:
 And last but not least, you can build your own awesome VM based on this image.
 
 I use these docker images in production and I assume update.
-Have fun and try my other images https://hub.docker.com/u/sylvainlasnier/ ^^
+Have fun and try my other [docker images](https://hub.docker.com/u/sylvainlasnier/) ^^
