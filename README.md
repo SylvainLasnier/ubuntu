@@ -1,12 +1,12 @@
-Ubuntu 14.10 Docker image
+Ubuntu 15.04 Docker image
 =============================
 
 Description
 -----------
 
-This is the Original Ubuntu 14.10 root docker images. It is small and basic.
+This is the Original Ubuntu 15.04 root docker images. It is small and basic.
 
-It includes fresh installation of Ubuntu 14.10 distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
+It includes fresh installation of Ubuntu 15.04 distribution, english language, universe apt packages and some basic common packages: vim-tiny editor, bash-completion to save time, curl to use webservices and supervisor to run easily more process in Docker VM.  
 
 So, this image respects pragmatic simple vision of Docker.  
 If you are looking for a complete VM, just use LXC.  
@@ -22,8 +22,8 @@ You can run shell like this:
     root@65b9aa83467b:/# lsb_release -a
     No LSB modules are available.
     Distributor ID:	Ubuntu
-    Description:	Ubuntu 14.10
-    Release:	14.10
+    Description:	Ubuntu 15.04
+    Release:	15.04
     Codename:	utopic
     root@65b9aa83467b:/# exit
     $
