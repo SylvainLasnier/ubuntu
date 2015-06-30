@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:latest
 MAINTAINER  Sylvain Lasnier <sylvain.lasnier@gmail.com>
 
 # Add useful packages
