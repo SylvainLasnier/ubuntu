@@ -24,7 +24,7 @@ You can run shell like this:
     Distributor ID:	Ubuntu
     Description:	Ubuntu 15.04
     Release:	15.04
-    Codename:	utopic
+    Codename:	vivid
     root@65b9aa83467b:/# exit
     $
 
