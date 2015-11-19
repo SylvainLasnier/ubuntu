@@ -3,7 +3,7 @@ MAINTAINER  Sylvain Lasnier <sylvain.lasnier@gmail.com>
 
 # Add useful packages
 RUN DEBIAN_FRONTEND=noninteractive apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl bash-completion vim-tiny supervisor wget
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl bash-completion vim-tiny supervisor wget aptitude
 
 # Setup root password for login process
 RUN echo root:root | chpasswd
