@@ -2,8 +2,8 @@ FROM ubuntu:15.10
 MAINTAINER  Sylvain Lasnier <sylvain.lasnier@gmail.com>
 
 # Add useful packages
-RUN DEBIAN_FRONTEND=noninteractive apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl bash-completion vim-tiny supervisor wget aptitude
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && apt-get -y upgrade && apt-get -y install curl bash-completion vim-tiny supervisor wget aptitude && apt-get clean
 
 # Setup root password for login process
 RUN echo root:root | chpasswd
