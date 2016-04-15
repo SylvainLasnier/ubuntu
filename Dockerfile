@@ -15,3 +15,6 @@ RUN update-locale LANG=en_US.UTF-8
 # Common alias
 RUN alias ls='ls --color=auto'
 RUN alias ll='ls -halF'
+
+# Volume
+VOLUME /data
